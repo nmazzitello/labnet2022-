@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    background-image: linear-gradient(to right bottom, #fdeedc, #faddbb, #f7cb9c, #f4b97e, #f1a661);
+}
+
+h1{
+    text-align: center;
+    font-size: 10vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    padding: 28px;
+}
+
+.titulo{
+    margin: 0;
+}
+
+form{
+    background-color: #E38B29;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bigBox{
+    background-image: linear-gradient(to bottom, #f1a661, #f4b372, #f8bf84, #fbcc96, #ffd8a9);;
+    padding: 7px;
+    margin: 7px;
+    border-radius: 4px;
+}
+
+.teamRadio{
+    padding: 20px;
+}
+
+.smallBox{
+    background-image: linear-gradient(to bottom, #ffd8a9, #ffdeb6, #fee3c2, #fee9cf, #fdeedc);
+    padding: 7px;
+    margin: 7px;
+    border-radius: 4px;
+}
+
+.error{
+    background-color: red;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+}

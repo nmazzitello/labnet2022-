@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container" id="contenedor">
+
+        <div class="mb-5 titulo">  
+            <h1>Actividad 6- Fomulario web</h1>
+            <h5>Mazzitello, Nicolas Antonio</h5> 
+        </div>
+    
+        <form id="formulario">
+
+            <div class="bigBox">
+                <div>
+                    <label for="">Nombre:</label>
+                    <input id="nombre" class="form-control col-md-7" type="text" maxlength="50">
+                </div>  
+    
+                <div>
+                    <label for="">Apellido:</label>
+                    <input id="apellido" class="form-control col-md-7" type="text" maxlength="50">
+                </div>  
+    
+                <div>
+                    <label for="">Edad:</label>
+                    <input id="edad" class="form-control col-md-1" type="number"  min="16" max="120" oninput="if( this.value.length>2 )  this.value = this.value.slice(0,2)">
+                </div>  
+    
+                <div class="teamRadio d-flex flex-column">
+                    <div>
+                        <label for="">Masculino</label>
+                        <input type="radio" name="sexo" checked value="masculino">
+                    </div>
+                    <div>
+                        <label for="">Femenino</label>
+                        <input type="radio" name="sexo" value="femenino">
+                    </div>
+                    <div>
+                        <label for="">Prefiero no decirlo</label>
+                        <input type="radio" name="sexo" value="indeterminado">
+                    </div>
+                </div>
+            </div>
+
+            <div class="smallBox">
+                <div>
+                    <label for="">Empresa:</label>
+                    <input id="empresa" class="form-control col-md-7" type="text" maxlength="50">
+                </div>  
+            </div>
+            
+            <div class="mt-3 text-center ">
+                <input id="btnCargar" class="btn btn-warning col-md-4" type="submit" value="CARGAR">
+            </div>
+            
+        </form>
+    </div>
+   
+    <script src="life.js"></script>
+    
+</body>
+</html>
